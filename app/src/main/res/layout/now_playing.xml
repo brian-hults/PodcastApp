@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent" >
+
+    <TextView
+        android:id="@+id/episode_title_now_playing"
+        style="@style/NowPlayingTitle" />
+
+    <TextView
+        android:id="@+id/episode_details"
+        style="@style/NowPlayingDetails" />
+
+    <ImageView
+        android:id="@+id/episode_img_now_playing"
+        style="@style/NowPlayingImg"/>
+
+    <LinearLayout
+        style="@style/TrackButtonsViewGroup">
+
+        <ImageView
+            android:id="@+id/previous"
+            style="@style/TrackButtons"
+            android:src="@drawable/ic_action_playback_prev"/>
+
+        <ImageView
+            android:id="@+id/rewind"
+            style="@style/TrackButtons"
+            android:src="@drawable/ic_action_playback_rew"/>
+
+        <ImageView
+            android:id="@+id/play_pause"
+            style="@style/TrackButtons"
+            android:src="@drawable/ic_action_playback_play" />
+
+        <ImageView
+            android:id="@+id/forward"
+            style="@style/TrackButtons"
+            android:src="@drawable/ic_action_playback_forw"/>
+
+        <ImageView
+            android:id="@+id/next"
+            style="@style/TrackButtons"
+            android:src="@drawable/ic_action_playback_next"/>
+    </LinearLayout>
+
+</RelativeLayout>

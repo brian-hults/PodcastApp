@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Podcast Player</string>
+    <string name="title_view">My Podcasts</string>
+    <string name="podcast_daily_news">Up Early</string>
+    <string name="podcast_history">Things Missing from History Class</string>
+    <string name="podcast_stem">STEM Radio Hour</string>
+    <string name="podcast_news_comedy">Wait. Tell Me Now!</string>
+    <string name="now_playing_label">Now Playing</string>
+    <string name="back_button">Back</string>
+    <string name="menu_button">Menu</string>
+</resources>

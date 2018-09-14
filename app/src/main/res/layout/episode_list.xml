@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/podcast_screen"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/podcast_screen_title"
+        style="@style/EpisodeScreenTitle" />
+
+    <View
+        style="@style/Divider">
+    </View>
+
+    <ListView
+        android:id="@+id/list_of_episodes"
+        style="@style/EpisodeListView"
+        tools:context="com.example.hults.podcastapp.DailyNewsActivity" />
+
+    <View
+        style="@style/Divider">
+    </View>
+
+</LinearLayout>

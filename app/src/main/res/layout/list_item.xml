@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/episode_click_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/episode_img_view"
+            style="@style/ImageViewTheme"
+            android:src="@drawable/daily_news"/>
+        <TextView
+                android:id="@+id/episode_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/episode_img_view"
+                android:layout_toLeftOf="@id/play_episode"
+                android:maxLines="2"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                style="@style/EpisodeTitle" />
+        <TextView
+            android:id="@+id/episode_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/episode_img_view"
+            android:layout_below="@id/episode_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            style="@style/EpisodeDetails" />
+        <TextView
+            android:id="@+id/dash_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@id/episode_title"
+            android:layout_toRightOf="@id/episode_duration"
+            android:text="--"/>
+        <TextView
+            android:id="@+id/episode_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dash_separator"
+            android:layout_below="@id/episode_title"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            style="@style/EpisodeDetails" />
+
+        <TextView
+            android:id="@+id/episode_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/episode_img_view"
+            android:layout_below="@id/episode_duration"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="12sp"
+            style="@style/EpisodeDetails" />
+
+        <ImageView
+            android:id="@+id/play_episode"
+            style="@style/ImageViewTheme"
+            android:layout_alignParentRight="true"
+            android:paddingRight="8dp"
+            android:src="@drawable/ic_action_playback_play"/>
+
+    </RelativeLayout>
+</LinearLayout>
+
